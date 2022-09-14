@@ -1,0 +1,28 @@
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors:(
+    "altlight": #f2ebfa,
+    "gold": #e6cf05,
+    "silver": #c0c0c0,
+    "bronze": #CD7F32,
+    "grey": grey,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import '../node_modules/bootstrap/scss//bootstrap.scss';
+
+.bi-star-fill,
+.bi-star-half{
+    color: #e6cf05;
+}
+
+.text-logo-custom {
+    font-size: 2rem;
+    background: -webkit-linear-gradient(120deg, #eee, #333);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
